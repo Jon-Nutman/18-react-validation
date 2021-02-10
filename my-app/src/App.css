@@ -13,10 +13,11 @@ form{
   align-items: center;
 }
 
+
 input{
   margin: 10px;
   height: 40px;
-  width: 80%;
+  width: 60%;
     border:solid white 1px;
     background-image:none;
     background-color:transparent;
@@ -24,9 +25,27 @@ input{
     -moz-box-shadow: none;
     box-shadow: none;
 }
+input:focus {
+  outline: none;
+}
+
+#text-position{
+  position: relative;
+  right: 28%;
+}
+
+button{
+  margin-top: 10px;
+  padding: 13px 90px;
+  font-size: 100%;
+  border: solid white 1px;
+  color: white;
+}
+button:focus {
+  outline: 1px solid #fff;
+}
 
 .text-label{
-  text-align: left;
   color: white;
   border-color: white;
   
@@ -34,5 +53,9 @@ input{
 
 .text-label-red{
   color: red;
-  border-color: red;
 }
+.input-box{
+  border-color: red;
+  color: white;
+}
+

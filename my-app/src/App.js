@@ -38,23 +38,23 @@ function App() {
     <div>
      <form onSubmit={handleSubmit}> 
 
-       <label className={nameError !== ''? 'text-label-red' : 'text-label'} htmlFor='name'>Name: {nameError}</label>
-       <input className={nameError !== ''? 'text-label-red' : 'text-label'} type="text" onChange={(e) => setName(e.target.value)}/>
+       <label id='text-position' className={nameError !== ''? 'text-label-red' : 'text-label'} htmlFor='name'>Name: {nameError}</label>
+       <input className={nameError !== ''? 'input-box' : 'text-label'} type="text" onChange={(e) => setName(e.target.value)}/>
 
-       <label className={emailError !== ''? 'text-label-red' : 'text-label'} htmlFor='email'>Email: {emailError}</label>
-       <input className={emailError !== ''? 'text-label-red' : 'text-label'} type="text" onChange={(e) => setEmail(e.target.value)}/>
+       <label id='text-position' className={emailError !== ''? 'text-label-red' : 'text-label'} htmlFor='email'>Email: {emailError}</label>
+       <input className={emailError !== ''? 'input-box' : 'text-label'} type="text" onChange={(e) => setEmail(e.target.value)}/>
 
-       <label className={usernameError !== ''? 'text-label-red' : 'text-label'} htmlFor='username'>Username: {usernameError}</label>
-       <input className={usernameError !== ''? 'text-label-red' : 'text-label'} type="text" onChange={(e) => setUsername(e.target.value)}/>
+       <label id='text-position' className={usernameError !== ''? 'text-label-red' : 'text-label'} htmlFor='username'>Username: {usernameError}</label>
+       <input className={usernameError !== ''? 'input-box' : 'text-label'} type="text" onChange={(e) => setUsername(e.target.value)}/>
        
-       <label className={passwordError !== ''? 'text-label-red' : 'text-label'} htmlFor='password'>Password: {passwordError}</label>
-       <input className={passwordError !== ''? 'text-label-red' : 'text-label'} type="text" onChange={(e) => setPassword(e.target.value)}/>
+       <label id='text-position' className={passwordError !== ''? 'text-label-red' : 'text-label'} htmlFor='password'>Password: {passwordError}</label>
+       <input className={passwordError !== ''? 'input-box' : 'text-label'} type="text" onChange={(e) => setPassword(e.target.value)}/>
 
-       <label className={confirmPasswordError !== ''? 'text-label-red' : 'text-label'} htmlFor='confirmPassword'>Confirm password:{confirmPasswordError}</label>
-       <input className={confirmPasswordError !== ''? 'text-label-red' : 'text-label'} type="text" onChange={(e) => setConfirmPassword(e.target.value)}/>
+       <label id='text-position' className={confirmPasswordError !== ''? 'text-label-red' : 'text-label'} htmlFor='confirmPassword'>Confirm password:{confirmPasswordError}</label>
+       <input className={confirmPasswordError !== ''? 'input-box' : 'text-label'} type="text" onChange={(e) => setConfirmPassword(e.target.value)}/>
 
-       <label className={websiteError !== ''? 'text-label-red' : 'text-label'} htmlFor='website'>Website: {websiteError}</label>
-       <input className={websiteError !== ''? 'text-label-red' : 'text-label'} type="text" onChange={(e) => setWebsite(e.target.value)}/>
+       <label id='text-position' className={websiteError !== ''? 'text-label-red' : 'text-label'} htmlFor='website'>Website: {websiteError}</label>
+       <input className={websiteError !== ''? 'input-box' : 'text-label'} type="text" onChange={(e) => setWebsite(e.target.value)}/>
        
        <button type="submit">Submit</button>
      </form>
