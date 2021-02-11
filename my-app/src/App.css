@@ -5,19 +5,19 @@
   background-color:#434343;
 }
 
-
-
 form{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: relative;
+  left: 22%;
+  z-index: 1;
 }
 
 
 input{
   margin: 10px;
   height: 40px;
-  width: 60%;
+  width: 50%;
     border:solid white 1px;
     background-image:none;
     background-color:transparent;
@@ -30,11 +30,14 @@ input:focus {
 }
 
 #text-position{
-  position: relative;
-  right: 28%;
+position: relative;
+ 
 }
 
 button{
+  position: relative;
+  left: 15%;
+  width: fit-content;
   margin-top: 10px;
   padding: 13px 90px;
   font-size: 100%;
@@ -59,3 +62,16 @@ button:focus {
   color: white;
 }
 
+h1{
+  font-size: 30px;
+  font-weight: 450;
+  margin: 20px;
+}
+
+.form-complete{
+  background-color: #434343;
+  z-index: 2;
+}
+.form-not-complete{
+z-index: 0;
+}
